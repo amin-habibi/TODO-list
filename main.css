@@ -4,7 +4,7 @@
     --personal: var(--primary);
     --light: #eee;
     --dark: #313145;
-    --danget: #ff557;
+    --danget: #ff5571;
     --gray:#888;
 
     --shadow: 0 1px 3px rgba(0,0,0,0.1);
@@ -211,7 +211,20 @@ input:checked ~ .bubble::after{
     transition: 0.2s ease-in-out;
 }
 
+.todo-item .actions button:hover{
+    opacity: 0.75;
+}
+
 .todo-item .actions .edit{
     margin-right: 0.5rem;
     background-color: var(--primary);
+}
+
+.todo-item .actions .delete{
+    background-color: var(--danget);
+}
+
+.todo-item.done .todo-content input{
+    text-decoration: line-through;
+    color: var(--gray);
 }
